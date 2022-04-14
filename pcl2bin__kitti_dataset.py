@@ -34,3 +34,15 @@ def convert(pcdfolder, binfolder):
     
 if __name__ == "__main__":
     fire.Fire()
+    
+'''
+.bin->.pcd转换成kitti格式的点云文件：
+
+这里需要安装PCL点云库，不过可以pcd和bin格式互相转换。
+
+cmake .
+make
+./binpcd --m=bin2pcd --b=velodyne_bin/ --p=velodyne_pcd/
+./binpcd --m=pcd2bin --b=velodyne_bin/ --p=velodyne_pcd/
+
+'''
